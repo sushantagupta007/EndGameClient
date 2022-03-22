@@ -1,0 +1,26 @@
+select,input {
+    background-color: #deece9;
+    border:none;
+    padding:15px 0px; 
+    border-radius: 5px;
+    margin:10px 0px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input::placeholder{
+    color:gray
+}
+
+#reviewForm{
+    background: url('../../Image/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+    
+}

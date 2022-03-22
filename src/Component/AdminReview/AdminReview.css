@@ -1,0 +1,7 @@
+#idValue:hover{
+    cursor: pointer;
+    border:1px solid black;
+    box-shadow: 2px 2px grey;
+    background-color: beige;
+}
+

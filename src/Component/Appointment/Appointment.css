@@ -1,0 +1,22 @@
+#appointmentOuterBox{
+    background-image: linear-gradient(to right, rgba(86, 188, 164, 0.55), rgba(86, 188, 164, 0.55)), url(../../Image/appointmentBG.jpg);
+    background-size: cover;
+    color: #000000;
+    padding:90px 0px
+
+}
+
+#appointmentInnerBox{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+input,select{
+    background-color: #deece9;
+    border:none;
+    padding:15px 0px; 
+    border-radius: 5px;
+}
+
+label{
+    font-weight: bold;
+}

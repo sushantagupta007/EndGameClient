@@ -1,0 +1,24 @@
+input::placeholder{
+    color:#159EEC; 
+    font-size: 1rem;
+}
+
+
+#loginBtn:hover{
+    text-decoration: underline;
+}
+
+#fontAwesomeDiv:hover{
+    cursor: pointer;
+}
+#signMainContainer{
+ background-image: linear-gradient(to right,#2a695a, #56bca4);
+ height:100vh; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#regForm{
+    background-color: white;
+}

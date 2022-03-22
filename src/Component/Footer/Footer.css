@@ -1,0 +1,22 @@
+#footerStyle{
+    background-color: #1b443b;
+    color:white
+}
+
+.footerLink{
+    color:white;
+    text-decoration: none;
+    margin:10px 0px ;
+}
+
+.footerLink:hover{
+    text-decoration: underline;
+}
+
+#footerSubscription{
+    display: flex;
+    flex-direction: column;
+}
+#footerSubscription input{
+    margin: 10px 0px; 
+}
