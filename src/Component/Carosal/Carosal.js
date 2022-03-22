@@ -9,24 +9,24 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-
+import { Container } from '@mui/material';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
     label: 'San Francisco – Oakland Bay Bridge, United States',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://t3.ftcdn.net/jpg/02/52/76/32/360_F_252763215_g28NaNc4IP1DBEr98gCdxVTE8uQcBVlh.jpg',
   },
   {
     label: 'Bird',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://cdn.archpaper.com/wp-content/uploads/2021/04/CEU-concept-design-for-Pavillion-4-by-KPF-1280x720.jpg',
   },
   {
     label: 'Bali, Indonesia',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      'https://helvar.com/wp-content/uploads/2019/11/AdobeStock_217273771.jpeg',
   },
   {
     label: 'Goč, Serbia',
@@ -53,7 +53,7 @@ function Carosal() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Container sx={{ maxWidth: '100%', flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -62,10 +62,9 @@ function Carosal() {
           alignItems: 'center',
           height: 50,
           pl: 2,
-          bgcolor: 'background.default',
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+        
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -79,9 +78,9 @@ function Carosal() {
               <Box
                 component="img"
                 sx={{
-                  height: 255,
+                  height: 450,
                   display: 'block',
-                  maxWidth: 400,
+                  maxWidth: '100%',
                   overflow: 'hidden',
                   width: '100%',
                 }}
@@ -121,7 +120,7 @@ function Carosal() {
           </Button>
         }
       />
-    </Box>
+    </Container>
   );
 }
 
