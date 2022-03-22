@@ -33,7 +33,8 @@ const AdminReview = () => {
         const decision = {
             decision: e.target.innerText
         }
-        fetch(`http://localhost:5000/review/:${row}`, {
+        console.log(decision)
+        fetch(`http://localhost:5000/review/${row}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

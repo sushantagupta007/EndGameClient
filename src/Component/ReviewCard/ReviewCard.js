@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Grid from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+
 import Typography from '@mui/material/Typography';
-import { Stack, Container,Box } from '@mui/material';
+import {Container,Box } from '@mui/material';
 import SingleReviewCard from '../SingleReviewCard/SingleReviewCard';
 
 
@@ -13,8 +9,8 @@ const ReviewCard = () => {
     const [review, setReview] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/review').
-            then(res => res.json())
+        fetch('http://localhost:5000/review')
+            .then(res => res.json())
             .then(data => setReview(data))
     }, [])
     console.log(review)

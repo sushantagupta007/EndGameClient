@@ -14,7 +14,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 import { ListItem } from '@mui/material';
-import { Link as RouterLink, BrowserRouter as Router, Switch, Route, useHistory } from "react-router-dom"
+import { Link as RouterLink, Switch, Route } from "react-router-dom"
 import AdminReview from '../AdminReview/AdminReview';
 import AdminAppointment from '../AdminAppointment/AdminAppointment';
 import AdminDiscount from './../AdminDiscount/AdminDiscount';

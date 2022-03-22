@@ -13,8 +13,10 @@ import Review from './Component/Review/Review';
 import ReviewCard from './Component/ReviewCard/ReviewCard';
 import Admin from './Component/Admin/Admin';
 import AdminReview from './Component/AdminReview/AdminReview';
+import HomePage from './Pages/Home/HomePage';
 
 import {
+
   BrowserRouter as Router,
   Switch,
   Route,
@@ -27,7 +29,7 @@ function App() {
     <AuthProvider>
       <Router>
         <Switch> 
-          <Route path="/home"> <Home></Home></Route>
+          <Route path="/home"> <HomePage></HomePage></Route>
           <Route path="/signup">  <SignUp></SignUp> </Route>
           <Route path="/signin"> <SignIn></SignIn></Route>
           <Route path="/bill"> <Payment></Payment></Route>

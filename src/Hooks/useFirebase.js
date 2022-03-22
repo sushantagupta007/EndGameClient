@@ -1,5 +1,5 @@
 import {
-  GoogleAuthProvider, getAuth, signInWithPopup, signOut, onAuthStateChanged, FacebookAuthProvider,
+  GoogleAuthProvider, getAuth, signInWithPopup, signOut, onAuthStateChanged, 
   createUserWithEmailAndPassword, updateProfile, sendEmailVerification, updatePassword,
   signInWithEmailAndPassword, sendPasswordResetEmail, getIdToken
 } from "firebase/auth";
@@ -21,7 +21,7 @@ const googleProvider = new GoogleAuthProvider();
 const useFirebase = () => {
   const [newUser, setNewUser] = useState(null)
   const [loggedUser,setLoggedUser] = useState({})
-  const [existingUser,setExistingUser] = useState({})
+  const [existingUser] = useState({})
   const [errors, setError] = useState("")
 
   const [loading,setIsLoading] = useState(true); 

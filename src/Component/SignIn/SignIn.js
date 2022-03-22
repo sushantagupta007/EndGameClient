@@ -19,7 +19,7 @@ const SignIn = () => {
     
 
     const onSubmit = data => {
-        const { name, email, number, password } = data
+        const {email,password } = data
       
         signInUser(email, password,history)
 
